@@ -30,9 +30,9 @@ const getFaults = async () => {
     //   method:"GET",
     //   mode: 'no-cors' // 'cors' by default
     // });
-    //const res = await axios.get(BASE_URL);
-    //const { data } = await res;
-    const valueArray = parseValues();
+    const res = await axios.get(BASE_URL);
+    const { data } = await res;
+    const valueArray = parseValues(data);
     shippedValues = { ...shippedValues, ...valueArray };
     return shippedValues;
   } catch (e) {

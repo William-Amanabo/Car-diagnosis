@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.title{
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  
+  text-align: center;
+  background-color: #80CAF6;
+  color: white;
+  width: 200px;
+  margin: auto;
+  padding: 5px ;
+}
+
+.graph{
+  max-width: 700px;
+  margin: auto;
+}
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav li > a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+nav li> a:hover{
+  background: rgba(255, 255, 255, 0.233);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.loader {
+  margin: auto;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.green{
+  text-align: center;
+  max-width: 700px;
+  /* margin: auto; */
+  color: white;
+  background: rgb(73, 221, 73);
+  padding: 5px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+.red{
+  text-align: center;
+  max-width: 700px;
+  /* margin: auto; */
+  color: white;
+  background: rgb(233, 20, 20);
+  padding: 5px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.image{
+  width: 80px;
+}
+.itemContainer{
+  width: 400px;
+  margin: auto;
+}
+
+.item{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: bolder;
+}
+.home{
+}
+.home ul {
+  height: 300px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.home ul li{
+  transition: all .5s;
+  padding: 10px;
+  background: #1abc9c;
+  /* border-radius: 50px; */
+  padding: 15px;
+}
+
+.home ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.home ul li:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.welcome{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
